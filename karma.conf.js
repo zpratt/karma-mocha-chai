@@ -1,19 +1,28 @@
-module.exports = function(config) {
-  config.set({
-  basePath: 'src',
-  frameworks: ['mocha', 'chai', 'sinon'],
-  files: [
-    'js/**/*.js',
-    'test/**/*.spec.js'
-  ],
-  exclude: [],
-  reporters: ['progress'],
-  port: 9999,
-  colors: true,
-  logLevel: config.LOG_ERROR,
-  autoWatch: false,
-  browsers: ['PhantomJS'],
-  captureTimeout: 6000,
-  singleRun: true
-  });
+module.exports = function (config) {
+    'use strict';
+    config.set({
+
+        basePath: '',
+
+        frameworks: ['mocha', 'chai'],
+
+        files: [
+            'src/*.js',
+            'test/*.spec.js'
+        ],
+
+        reporters: ['progress'],
+
+        port: 9876,
+        colors: true,
+        autoWatch: false,
+        singleRun: false,
+
+        // level of logging
+        // possible values: config.LOG_DISABLE || config.LOG_ERROR || config.LOG_WARN || config.LOG_INFO || config.LOG_DEBUG
+        logLevel: config.LOG_INFO,
+
+        browsers: ['PhantomJS']
+
+    });
 };
