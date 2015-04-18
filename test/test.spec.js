@@ -1,5 +1,5 @@
-describe("A test suite", function () {
-    'use strict';
+describe('A test suite', function () {
+    var expect = window.expect;
 
     beforeEach(function () {
 
