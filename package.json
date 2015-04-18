@@ -1,6 +1,6 @@
 {
   "name": "karma-mocha-chai",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Skeleton project structure for using karma, mocha, and chai.",
   "main": "karma.conf.js",
   "scripts": {
